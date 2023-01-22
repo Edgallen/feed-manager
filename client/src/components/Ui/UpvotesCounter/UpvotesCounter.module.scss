@@ -1,0 +1,46 @@
+@import '../../../assets/scss/color-palette';
+
+.upvotesCounter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: map-get($colors, 'color-button-grey');
+  border-radius: 10px;
+  width: 40px;
+  height: 53px;
+  transition: .4s;
+  cursor: pointer;
+}
+
+.upvotesCounter:hover {
+  background-color: map-get($colors, 'color-button-grey-hover');
+}
+
+.upvotesCounter__active {
+  background-color: map-get($colors, 'color-button-active');
+}
+
+.upvotesCounter__active:hover {
+  background-color: map-get($colors, 'color-button-active');
+}
+
+.upvotesCounter__icon {
+  font-size: 18px;
+  font-weight: 700;
+  color: map-get($colors, 'color-text-service');
+}
+
+.upvotesCounter__icon__active {
+  color: map-get($colors, 'color-text-main-white');
+}
+
+.upvotesCounter__title {
+  font-size: 15px;
+  color: map-get($colors, 'color-text-main-dark');
+  font-weight: 900;
+}
+
+.upvotesCounter__title__active {
+  color: map-get($colors, 'color-text-main-white');
+}

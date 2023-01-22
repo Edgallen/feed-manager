@@ -1,0 +1,22 @@
+@import '../../../assets/scss/color-palette';
+
+.backNavigationButton {
+  color: map-get($colors, 'color-text-secondary');
+  font-size: 15px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: .4s;
+  cursor: pointer;
+}
+
+.backNavigationButton:hover {
+  box-shadow: 0 1px map-get($colors, 'color-text-secondary');
+}
+
+.backNavigationButton__icon {
+  color: map-get($colors, 'color-button-active');
+  font-size: 18px;
+  font-weight: 800;
+}

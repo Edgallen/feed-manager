@@ -1,0 +1,19 @@
+@import '../../../assets/scss/color-palette';
+
+.commentsCounter {
+  display: flex;
+  gap: 9px;
+  align-items: center;
+}
+
+.commentsCounter__icon {
+  font-size: 22px;
+  font-weight: 900;
+  color: map-get($colors, 'color-background-icon');
+}
+
+.commentsCounter__title {
+  font-size: 18px;
+  font-weight: 900;
+  color: map-get($colors, 'color-text-main-dark');
+}

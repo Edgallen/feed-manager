@@ -1,0 +1,87 @@
+@import '../../assets/scss/color-palette';
+@import '../../assets/scss/shadows';
+
+.feedHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 16px;
+  background-color: map-get($colors , 'color-background-annotation');
+  color: map-get($colors , 'color-text-main-white');
+  border-radius: 10px;
+}
+
+.feedHeader__container {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.feedHeader__icon {
+  font-size: 22px;
+}
+
+.feedHeader__title {
+  font-size: 18px;
+}
+
+.sortMenu__container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.sortMenu__subtitle {
+  font-size: 14px;
+}
+
+.sortMenu__title {
+  font-size: 15px;
+}
+
+.sortMenu__icon {
+  font-size: 20px;
+  transition: .2s;
+}
+
+.sortMenu__icon__reverse {
+  transform: rotate(-0.5turn);
+}
+
+.sortSelector__container {
+  position: absolute;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  transform: translate(0, 35px);
+  color: map-get($colors , 'color-text-secondary');
+  background-color: map-get($colors , 'color-background-card');
+  box-shadow: map-get($shadows , 'shadow-main');
+}
+
+.sortSelector__selector {
+  display: flex;
+  height: 40px;
+  padding: 0 15px;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(58,67,116,.15);
+  transition: .4s;
+  cursor: pointer;
+}
+
+.sortSelector__selector:hover {
+  color: map-get($colors , 'color-status-active');
+}
+
+.sortSelector__selector:nth-last-child(1) {
+  border-bottom: none;
+}
+
+.sortSelector__icon {
+  font-size: 20px;
+  font-weight: 500;
+  color: map-get($colors , 'color-status-active');
+}

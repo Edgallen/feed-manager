@@ -1,0 +1,21 @@
+@import '../../../assets/scss/color-palette';
+
+.textAreaElement {
+  font-size: 16px;
+  color: map-get($colors, 'color-text-main-dark');
+  outline: none;
+  padding: 10px 25px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  transition: .4s;
+  background-color: map-get($colors, 'color-background');
+  resize: none;
+}
+
+.textAreaElement:hover {
+  border-color: map-get($colors, 'color-button-active');
+}
+
+.textAreaElement:focus {
+  border-color: map-get($colors, 'color-button-active');
+}

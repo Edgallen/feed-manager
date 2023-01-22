@@ -1,0 +1,8 @@
+@import '../../assets/scss/color-palette';
+
+.feedList__container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: 24px;
+}

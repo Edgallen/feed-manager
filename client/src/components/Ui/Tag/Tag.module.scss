@@ -1,0 +1,23 @@
+@import '../../../assets/scss/color-palette';
+
+.tag {
+  display: flex;
+  align-items: center;
+  background-color: map-get($colors, 'color-button-grey');
+  color: map-get($colors, 'color-text-service');
+  border-radius: 10px;
+  height: 30px;
+  padding: 0 13px;
+  gap: 10px;
+}
+
+.tag__title {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.tag__button {
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+}

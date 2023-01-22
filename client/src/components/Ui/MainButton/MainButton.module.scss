@@ -1,0 +1,33 @@
+@import '../../../assets/scss/color-palette';
+
+.mainButton {
+  font-size: 15px;
+  letter-spacing: .16px;
+  font-weight: 700;
+  padding: 13px 25px;
+  border-radius: 10px;
+  color: map-get($colors , 'color-text-main-white');
+  background-color: map-get($colors , 'color-button-purple');
+  transition: .4s;
+  cursor: pointer;
+}
+
+.mainButton:hover {
+  background-color: map-get($colors , 'color-button-purple-hover');
+}
+
+.mainButton__secondaryColor {
+  background-color: map-get($colors , 'color-background-annotation');
+}
+
+.mainButton__secondaryColor:hover {
+  background-color: map-get($colors , 'color-background-annotation-secondary');
+}
+
+.mainButton__serviceColor {
+  background-color: map-get($colors , 'color-button-active');
+}
+
+.mainButton__serviceColor:hover {
+  background-color: map-get($colors , 'color-button-active-hover');
+}

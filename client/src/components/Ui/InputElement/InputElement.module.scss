@@ -1,0 +1,21 @@
+@import '../../../assets/scss/color-palette';
+
+.inputElement {
+  font-size: 16px;
+  color: map-get($colors, 'color-text-main-dark');
+  border: 1px solid transparent;
+  outline: none;
+  height: 48px;
+  padding: 0 25px;
+  border-radius: 10px;
+  transition: .4s;
+  background-color: map-get($colors, 'color-background');
+}
+
+.inputElement:hover {
+  border-color: map-get($colors, 'color-button-active');
+}
+
+.inputElement:focus {
+  border-color: map-get($colors, 'color-button-active');
+}

@@ -1,0 +1,42 @@
+@import './assets/scss/color-palette';
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  background-color: map-get($colors, 'color-background');
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, p {
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+button {
+  outline: none;
+  border: none;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 0;
+}
+
+::-webkit-scrollbar-thumb {
+  width: 6px;
+  border-radius: 8px;
+  background-color: map-get($colors, 'color-tooltip' );
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}

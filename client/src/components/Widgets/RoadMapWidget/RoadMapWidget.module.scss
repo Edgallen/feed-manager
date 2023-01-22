@@ -1,0 +1,78 @@
+@import '../../../assets/scss/color-palette';
+
+.roadMapWidget {
+  display: flex;
+  flex-direction: column;
+  background-color: map-get($colors, 'color-background-card');
+  border-radius: 10px;
+  padding: 24px;
+  gap: 24px;
+}
+
+.roadMapWidget__container {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__title {
+  font-size: 18px;
+  font-weight: 700;
+  color: map-get($colors, 'color-text-main-dark');
+}
+
+.header__link {
+  background: none;
+  padding: 0;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: underline;
+  color: map-get($colors, 'color-text-service');
+  transition: .4s;
+  cursor: pointer;
+}
+
+.header__link:hover {
+  color: map-get($colors, 'color-text-service-hover');
+}
+
+.statusRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: map-get($colors, 'color-text-secondary');
+}
+
+.statusRow__container {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.status__pin {
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+}
+
+.status__new {
+  background-color: map-get($colors, 'color-status-new');
+}
+
+.status__active {
+  background-color: map-get($colors, 'color-status-active');
+}
+
+.status__done {
+  background-color: map-get($colors, 'color-status-done');
+}
+
+.statusRow__counter {
+  font-size: 18px;
+  font-weight: 700;
+}

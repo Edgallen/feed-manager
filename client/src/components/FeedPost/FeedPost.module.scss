@@ -1,0 +1,49 @@
+@import '../../assets/scss/color-palette';
+
+.feedPost {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  padding: 28px 32px;
+  background-color: map-get($colors, 'color-background-card');
+  border: 1px solid transparent;
+  transition: .4s;
+  cursor: pointer;
+}
+
+.feedPost:hover {
+  border: 1px solid map-get($colors, 'color-button-purple');
+}
+
+.feedPost__static {
+  cursor: default;
+}
+
+.feedPost__static:hover {
+  border: 1px solid transparent;
+}
+
+.feedPost__container {
+  display: flex;
+  align-items: flex-start;
+  gap: 32px;
+}
+
+.post__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.post__title {
+  color: map-get($colors, 'color-text-main-dark');
+  font-weight: 900;
+  font-size: 18px;
+}
+
+.post__description {
+  font-size: 15px;
+  color: map-get($colors, 'color-text-secondary');
+}

@@ -1,0 +1,64 @@
+@import '../../../assets/scss/color-palette';
+
+.feedModal {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.feedModal__title {
+  font-size: 26px;
+  font-weight: 700;
+  color: map-get($colors, 'color-text-main-dark');
+}
+
+.feedModal__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.feedModal__subtitle {
+  font-size: 18px;
+  color: map-get($colors, 'color-text-main-dark');
+}
+
+.feedModal__span {
+  font-size: 14px;
+  color: map-get($colors, 'color-text-secondary');
+}
+
+.categoryInput__wrapper {
+  display: grid;
+  grid-template-columns: 6fr 1fr;
+  align-items: center;
+}
+
+.categoryInput__button {
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  font-weight: 600;
+  background-color: transparent;
+  color: map-get($colors, 'color-button-green');
+  transition: .4s;
+  cursor: pointer;
+}
+
+.categoryInput__button:hover {
+  color: map-get($colors, 'color-button-green-hover');
+}
+
+.taglist__container {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.buttons__wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 10px;
+}

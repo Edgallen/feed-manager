@@ -1,0 +1,10 @@
+@import '../../../assets/scss/color-palette';
+
+.tagsWiget__container {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: map-get($colors, 'color-background-card' );
+  padding: 24px;
+  border-radius: 10px;
+  gap: 10px;
+}

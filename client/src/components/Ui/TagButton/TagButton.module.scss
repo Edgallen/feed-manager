@@ -1,0 +1,39 @@
+@import '../../../assets/scss/color-palette';
+
+.tagButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: map-get($colors, 'color-button-grey');
+  height: 30px;
+  padding: 0 16px;
+  color: map-get($colors, 'color-text-service');
+  border-radius: 10px;
+  transition: .4s;
+}
+
+.tagButton__cursor {
+  cursor: pointer;
+}
+
+.tagButton:hover {
+  background-color: map-get($colors, 'color-button-grey-hover');
+}
+
+.tagButton__static:hover {
+  background-color: map-get($colors, 'color-button-grey');
+}
+
+.tagButton__active {
+  color: map-get($colors, 'color-text-main-white');
+  background-color: map-get($colors, 'color-button-active');
+}
+
+.tagButton__active:hover {
+  background-color: map-get($colors, 'color-button-active');
+}
+
+.tagButton__title {
+  font-size: 14px;
+  font-weight: 600;
+}

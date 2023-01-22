@@ -1,0 +1,57 @@
+@import '../../assets/scss/color-palette';
+
+.modalBody {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+
+.modalOverlay {
+  position: absolute;
+  background-color: map-get($colors, 'color-modal-overlay');
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 0;
+  top: -28px;
+  border-radius: 50%;
+  background: map-get($colors, 'color-card-title');
+}
+
+.banner__icon {
+  padding: 14px;
+  font-size: 28px;
+  font-weight: 900;
+  color: map-get($colors, 'color-text-main-white');
+}
+
+.modalBody__container {
+  display: flex;
+  width: 530px;
+  top: 0;
+  min-height: 600px;
+  z-index: 2;
+}
+
+.children__wrapper {
+  position: relative;
+  display: flex;
+  border-radius: 10px;
+  width: 100%;
+  padding: 40px;
+  background-color: map-get($colors, 'color-background-card');
+}

@@ -1,0 +1,13 @@
+.feedPostPage {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 800px;
+  margin: 56px auto 0 auto
+}
+
+.feedPostPage__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

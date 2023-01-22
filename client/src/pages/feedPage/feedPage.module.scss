@@ -1,0 +1,23 @@
+.feedPage {
+  box-sizing: content-box;
+  justify-content: center;
+  display: flex;
+  height: 85vh;
+  margin: 56px auto 0 auto
+}
+
+.widgets {
+  box-sizing: border-box;
+  display: flex;
+  margin-right: 30px;
+  gap: 24px;
+  flex-direction: column;
+  height: 100%;
+  width: 255px;
+}
+
+.feed {
+  box-sizing: border-box;
+  height: 100%;
+  width: 800px;
+}
