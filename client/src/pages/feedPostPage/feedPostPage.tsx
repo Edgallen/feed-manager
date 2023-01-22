@@ -1,13 +1,17 @@
 import { observer } from "mobx-react-lite";
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+
 import CommentSection from "../../components/CommentSection/CommentSection";
 import FeedPost from "../../components/FeedPost/FeedPost";
 import BackNavigationButton from "../../components/Ui/BackNavigationButton/BackNavigationButton";
 import MainButton from "../../components/Ui/MainButton/MainButton";
+
 import feedStore from "../../stores/feedStore";
-import { IFeedPost } from "../../types/feedTypes";
-import styles from "./feedPostPage.module.scss";
+
+import type { IFeedPost } from "../../types/feedTypes";
+
+// import styles from "./feedPostPage.scss";
 
 export const FeedPostPage = observer(() => {
   const params = useParams();
@@ -24,14 +28,14 @@ export const FeedPostPage = observer(() => {
   }
 
   return (
-    <section className={styles.feedPostPage}>
-      <div className={styles.feedPostPage__header}>
+    <section>
+      <div>
         <BackNavigationButton navigateTo="/" />
         <MainButton text={"Редактировать"} color={"service"} />
       </div>
       <FeedPost
         feedData={post}
-        static={true}
+        isStatic={true}
         tagButtonCursor={"default"}
         postId={post.id}
       />

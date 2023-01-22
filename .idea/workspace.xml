@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9cbcaa99-3134-4c50-8a49-ce974c8e2a9b" name="Changes" comment="scss-refactor">
+      <change afterPath="$PROJECT_DIR$/client/config/webpack/webpack.config.loaders.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/config/webpack/webpack.config.rules.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/pages/FeedPage/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/feedPage/feedPage.scss" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/FeedPage/FeedPage.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/feedPage/feedPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/FeedPage/FeedPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/feedPostPage/feedPostPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/feedPostPage/feedPostPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/stores/feedStore.ts" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/stores/feedStore.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/webpack.config.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTTP Public Environment File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="SOFT" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="f884ae6f-68fe-4cae-a2d2-55928981ffc7" />
+        <option name="url" value="https://github.com/Edgallen/feed-manager.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
+  <component name="ProjectId" id="2JHbigDFaxMXQcz2s5UJOgQTeBJ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Программирование/Проекты/feed-manager&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;terminal&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;D:\\Программирование\\Проекты\\feed-manager\\client\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Программирование\Проекты\feed-manager" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Программирование\Проекты\feed-manager\client" />
+      <recent name="D:\Программирование\Проекты\feed-manager\client\config\webpack" />
+      <recent name="D:\Программирование\Проекты\feed-manager\client\config" />
+      <recent name="D:\Программирование\Проекты\feed-manager\client\src\components\Modals\components" />
+      <recent name="D:\Программирование\Проекты\feed-manager\client\src\components\CommentSection\components" />
+    </key>
+  </component>
+  <component name="RunManager" selected="npm.start">
+    <configuration name="lint:fix" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/client/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="lint:fix" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/client/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.start" />
+        <item itemvalue="npm.lint:fix" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9cbcaa99-3134-4c50-8a49-ce974c8e2a9b" name="Changes" comment="" />
+      <created>1671738084802</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1671738084802</updated>
+      <workItem from="1671738086179" duration="39000" />
+      <workItem from="1673978343054" duration="68000" />
+      <workItem from="1673978421002" duration="3499000" />
+      <workItem from="1674238705780" duration="3090000" />
+      <workItem from="1674402723376" duration="1294000" />
+      <workItem from="1674404078135" duration="43000" />
+      <workItem from="1674404128669" duration="5307000" />
+      <workItem from="1674409533520" duration="1715000" />
+      <workItem from="1674415672356" duration="1144000" />
+      <workItem from="1674573596616" duration="838000" />
+      <workItem from="1674578590766" duration="5368000" />
+      <workItem from="1674679966923" duration="3961000" />
+      <workItem from="1675003941281" duration="1810000" />
+      <workItem from="1675278723790" duration="268000" />
+      <workItem from="1675524067959" duration="8321000" />
+    </task>
+    <task id="LOCAL-00001" summary="initial commit">
+      <created>1673979687644</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1673979687644</updated>
+    </task>
+    <task id="LOCAL-00002" summary="initial commit">
+      <created>1673979874026</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1673979874026</updated>
+    </task>
+    <task id="LOCAL-00003" summary="initial commit">
+      <created>1674402966873</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1674402966873</updated>
+    </task>
+    <task id="LOCAL-00004" summary="initial commit">
+      <created>1674403503404</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1674403503404</updated>
+    </task>
+    <task id="LOCAL-00005" summary="scss-refactor">
+      <created>1674410327200</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1674410327200</updated>
+    </task>
+    <task id="LOCAL-00006" summary="scss-refactor">
+      <created>1674415515468</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1674415515468</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Merge remote-tracking branch 'origin/scss-refactor' into scss-refactor&#10;&#10;# Conflicts:&#10;#&#9;.idea/vcs.xml">
+      <created>1674415769216</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1674415769216</updated>
+    </task>
+    <task id="LOCAL-00008" summary="scss-refactor">
+      <created>1674573825754</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1674573825754</updated>
+    </task>
+    <task id="LOCAL-00009" summary="scss-refactor">
+      <created>1674573836883</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1674573836883</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="initial commit" />
+    <MESSAGE value="Merge remote-tracking branch 'origin/scss-refactor' into scss-refactor&#10;&#10;# Conflicts:&#10;#&#9;.idea/vcs.xml" />
+    <MESSAGE value="scss-refactor" />
+    <option name="LAST_COMMIT_MESSAGE" value="scss-refactor" />
+  </component>
+</project>

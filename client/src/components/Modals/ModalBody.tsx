@@ -1,8 +1,10 @@
-import { observer } from "mobx-react-lite";
 import React, { FC, ReactNode, useEffect } from "react";
+import { observer } from "mobx-react-lite";
 import { createPortal } from "react-dom";
+
 import modalStore from "../../stores/modalStore";
-import styles from "./ModalBody.module.scss";
+
+import styles from "./ModalBody.scss";
 
 interface ModalBodyProps {
   remixIconClass: "ri-add-line";
@@ -40,9 +42,9 @@ const ModalBody: FC<ModalBodyProps> = observer(
 
         <div className={styles.modalOverlay} onClick={handleModalClose}></div>
       </section>,
-      document.getElementById("modal")
+      document.getElementById("modal"),
     );
-  }
+  },
 );
 
 export default ModalBody;

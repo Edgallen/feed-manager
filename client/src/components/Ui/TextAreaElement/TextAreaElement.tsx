@@ -1,7 +1,8 @@
 import React, { ChangeEvent, FC } from "react";
-import styles from "./TextAreaElement.module.scss";
 
-interface textAreaElementProps {
+import styles from "./TextAreaElement.scss";
+
+interface IProps {
   value: string;
   inputKey: string;
   onChangeCallback: (value: string, inputKey: string) => void;
@@ -9,11 +10,12 @@ interface textAreaElementProps {
   id?: string;
 }
 
-const TextAreaElement: FC<textAreaElementProps> = ({
+const TextAreaElement: FC<IProps> = ({
   value,
   inputKey,
   onChangeCallback,
-  ...props
+  name,
+  id,
 }) => {
   return (
     <textarea
@@ -22,8 +24,8 @@ const TextAreaElement: FC<textAreaElementProps> = ({
       onChange={(event: ChangeEvent<HTMLTextAreaElement>) =>
         onChangeCallback(event.target.value, inputKey)
       }
-      name={props.name}
-      id={props.id}
+      name={name}
+      id={id}
       cols={30}
       rows={6}
     ></textarea>

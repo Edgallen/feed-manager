@@ -1,4 +1,4 @@
 import { FeedPostPage } from "./feedPostPage/feedPostPage";
-import { FeedPage } from "./feedPage/feedPage";
+import FeedPage from "./FeedPage";
 
 export { FeedPage, FeedPostPage };

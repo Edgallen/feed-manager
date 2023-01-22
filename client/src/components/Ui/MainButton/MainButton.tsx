@@ -1,7 +1,8 @@
 import React, { FC } from "react";
-import styles from "./MainButton.module.scss";
 
-interface mainButtonProps {
+import styles from "./MainButton.scss";
+
+interface IProps {
   text: string;
   clickCallback?: () => void;
   color?: "main" | "secondary" | "service";
@@ -9,10 +10,12 @@ interface mainButtonProps {
   form?: string;
 }
 
-const MainButton: FC<mainButtonProps> = ({
+const MainButton: FC<IProps> = ({
   color = "main",
+  clickCallback,
   text,
-  ...props
+  type,
+  form,
 }) => {
   const getColor = () => {
     switch (color) {
@@ -31,9 +34,9 @@ const MainButton: FC<mainButtonProps> = ({
   return (
     <button
       className={`${styles.mainButton}${getColor()}`}
-      onClick={props.clickCallback}
-      form={props.form}
-      type={props.type ? props.type : "button"}
+      onClick={clickCallback}
+      form={form}
+      type={type ? type : "button"}
     >
       {text}
     </button>

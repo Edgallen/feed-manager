@@ -1,23 +1,27 @@
-import { observer } from "mobx-react-lite";
 import React, { FC, useState } from "react";
+import { observer } from "mobx-react-lite";
+
+import MainButton from "../Ui/MainButton/MainButton";
+
 import feedStore from "../../stores/feedStore";
 import modalStore from "../../stores/modalStore";
-import { TFilters } from "../../types/feedTypes";
-import MainButton from "../Ui/MainButton/MainButton";
-import styles from "./FeedHeader.module.scss";
+
+import type { TFilters } from "../../types/feedTypes";
+
+import styles from "./FeedHeader.scss";
 
 interface ISortVariants {
   id: number;
   title: string;
 }
 
-interface sortItemsProps {
+interface IProps {
   sortVariants: Array<ISortVariants>;
   activeSort: string;
   callback: (selectedSort: string) => void;
 }
 
-const SortMenu: FC<sortItemsProps> = ({
+const SortMenu: FC<IProps> = ({
   sortVariants,
   activeSort,
   callback,

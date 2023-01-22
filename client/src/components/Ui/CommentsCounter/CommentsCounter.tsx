@@ -1,11 +1,12 @@
 import React, { FC } from "react";
-import styles from "./CommentsCounter.module.scss";
 
-interface commentsCounterProps {
+import styles from "./CommentsCounter.scss";
+
+interface IProps {
   count: number;
 }
 
-const CommentsCounter: FC<commentsCounterProps> = ({ count }) => {
+const CommentsCounter: FC<IProps> = ({ count }) => {
   return (
     <div className={styles.commentsCounter}>
       <i className={`ri-chat-1-fill ${styles.commentsCounter__icon}`}></i>

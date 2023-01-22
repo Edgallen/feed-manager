@@ -1,7 +1,10 @@
 import React, { useState } from "react";
-import { ITestComment } from "../../types/commentTypes";
-import styles from "./CommentSection.module.scss";
-import Comment from "./Comment/Comment";
+
+import Comment from "./components/Comment/Comment";
+
+import type { ITestComment } from "../../types/commentTypes";
+
+import styles from "./CommentSection.scss";
 
 const CommentSection = () => {
   // TODO: Убрать ITestComment

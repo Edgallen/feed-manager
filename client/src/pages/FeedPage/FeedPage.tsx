@@ -1,13 +1,16 @@
-import { observer } from "mobx-react-lite";
 import React, { FC } from "react";
+import { observer } from "mobx-react-lite";
+
 import FeedHeader from "../../components/FeedHeader/FeedHeader";
 import FeedList from "../../components/FeedList/FeedList";
-import FeedModal from "../../components/Modals/FeedModal/FeedModal";
+import FeedModal from "../../components/Modals/components/FeedModal/FeedModal";
 import RoadMapWidget from "../../components/Widgets/RoadMapWidget/RoadMapWidget";
 import TagsWidget from "../../components/Widgets/TagsWidget/TagsWidget";
 import TitleWidget from "../../components/Widgets/TitleWidget/TitleWidget";
+
 import modalStore from "../../stores/modalStore";
-import styles from "./feedPage.module.scss";
+
+import styles from "./feedPage.scss";
 
 export const FeedPage: FC = observer(() => {
   return (
@@ -26,3 +29,5 @@ export const FeedPage: FC = observer(() => {
     </section>
   );
 });
+
+export default FeedPage;

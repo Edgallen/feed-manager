@@ -1,18 +1,14 @@
 import React, { FC, useState } from "react";
-import styles from "./RoadMapWidget.module.scss";
 
-interface IStatus {
-  id: number;
-  title: string;
-  count: number;
-  status: string;
-}
+import type { IStatus } from "./interfaces";
 
-interface statysRowProps {
+import styles from "./RoadMapWidget.scss";
+
+interface IProps {
   status: IStatus;
 }
 
-const StatusRow: FC<statysRowProps> = ({ status }) => {
+const StatusRow: FC<IProps> = ({ status }) => {
   const getStatusColor = () => {
     switch (status.status) {
       case "active": {

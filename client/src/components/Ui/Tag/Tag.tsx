@@ -1,12 +1,13 @@
 import React, { FC } from "react";
-import styles from "./Tag.module.scss";
 
-interface ICategoryTagProps {
+import styles from "./Tag.scss";
+
+interface IProps {
   text: string;
   deleteCallback: (tagName: string) => void;
 }
 
-const Tag: FC<ICategoryTagProps> = ({ text, deleteCallback }) => {
+const Tag: FC<IProps> = ({ text, deleteCallback }) => {
   return (
     <div className={styles.tag} onClick={() => deleteCallback(text)}>
       <span className={styles.tag__title}>{text}</span>

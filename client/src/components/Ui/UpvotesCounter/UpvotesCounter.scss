@@ -1,6 +1,6 @@
 @import '../../../assets/scss/color-palette';
 
-.upvotesCounter {
+.upVotesCounter {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -13,34 +13,34 @@
   cursor: pointer;
 }
 
-.upvotesCounter:hover {
+.upVotesCounter:hover {
   background-color: map-get($colors, 'color-button-grey-hover');
 }
 
-.upvotesCounter__active {
+.upVotesCounter__active {
   background-color: map-get($colors, 'color-button-active');
 }
 
-.upvotesCounter__active:hover {
+.upVotesCounter__active:hover {
   background-color: map-get($colors, 'color-button-active');
 }
 
-.upvotesCounter__icon {
+.upVotesCounter__icon {
   font-size: 18px;
   font-weight: 700;
   color: map-get($colors, 'color-text-service');
 }
 
-.upvotesCounter__icon__active {
+.upVotesCounter__icon__active {
   color: map-get($colors, 'color-text-main-white');
 }
 
-.upvotesCounter__title {
+.upVotesCounter__title {
   font-size: 15px;
   color: map-get($colors, 'color-text-main-dark');
   font-weight: 900;
 }
 
-.upvotesCounter__title__active {
+.upVotesCounter__title__active {
   color: map-get($colors, 'color-text-main-white');
 }

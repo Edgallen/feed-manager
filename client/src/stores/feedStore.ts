@@ -1,6 +1,8 @@
 import { makeAutoObservable } from "mobx";
+
 import FeedPostModel from "../models/feedPostModel";
-import { IFeedNewPost, IFeedPost, TFilters, TTag } from "../types/feedTypes";
+
+import type { IFeedNewPost, IFeedPost, TFilters, TTag } from "../types/feedTypes";
 
 class FeedStore {
   posts: Array<IFeedPost> = [
@@ -14,10 +16,15 @@ class FeedStore {
       upVoted: false,
     },
   ];
+
   selectedPost: IFeedPost | null = null;
+
   activeFilter: TFilters = "Не выбрано";
+
   activeTag: TTag = "Все";
+
   isLoading = false;
+
   isFailed = false;
 
   constructor() {
@@ -39,7 +46,7 @@ class FeedStore {
 
   addUpvote(postId: string) {
     const postIndexToUpdate = this.posts.findIndex(
-      (post) => post.id === postId
+      (post) => post.id === postId,
     );
     const postToUpdate = this.posts[postIndexToUpdate];
 
@@ -52,7 +59,7 @@ class FeedStore {
 
   removeUpvote(postId: string) {
     const postIndexToUpdate = this.posts.findIndex(
-      (post) => post.id === postId
+      (post) => post.id === postId,
     );
 
     const postToUpdate = this.posts[postIndexToUpdate];

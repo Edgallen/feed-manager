@@ -1,23 +1,27 @@
 import React, { ChangeEvent, FC } from "react";
-import styles from "./InputElement.module.scss";
 
-interface inputElementProps {
+import styles from "./InputElement.scss";
+
+interface IProps {
   value: string;
   type: "text" | "password";
   inputKey: string;
   onChangeCallback: (value: string, inputKey: string) => void;
   minlength?: number;
-  required?: boolean;
+  isRequired?: boolean;
   name?: string;
   id?: string;
 }
 
-const InputElement: FC<inputElementProps> = ({
+const InputElement: FC<IProps> = ({
   value,
   type,
   inputKey,
   onChangeCallback,
-  ...props
+  minlength,
+  isRequired,
+  name,
+  id,
 }) => {
   return (
     <input
@@ -27,10 +31,10 @@ const InputElement: FC<inputElementProps> = ({
         onChangeCallback(event.target.value, inputKey)
       }
       type={type}
-      minLength={props.minlength}
-      required={props.required}
-      name={props.name}
-      id={props.id}
+      minLength={minlength}
+      required={isRequired}
+      name={name}
+      id={id}
     />
   );
 };

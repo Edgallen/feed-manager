@@ -1,12 +1,13 @@
 import React, { FC } from "react";
 import { useNavigate } from "react-router-dom";
-import styles from "./BackNavigationButton.module.scss";
 
-interface backNavigationButtonProps {
+import styles from "./BackNavigationButton.scss";
+
+interface IProps {
   navigateTo: string;
 }
 
-const BackNavigationButton: FC<backNavigationButtonProps> = ({
+const BackNavigationButton: FC<IProps> = ({
   navigateTo,
 }) => {
   const navigate = useNavigate();

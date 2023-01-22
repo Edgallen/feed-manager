@@ -1,13 +1,17 @@
 import React, { useState } from "react";
-import feedStore from "../../../stores/feedStore";
-import modalStore from "../../../stores/modalStore";
-import InputElement from "../../Ui/InputElement/InputElement";
-import MainButton from "../../Ui/MainButton/MainButton";
-import TextAreaElement from "../../Ui/TextAreaElement/TextAreaElement";
-import ModalBody from "../ModalBody";
-import styles from "./FeedModal.module.scss";
-import { IFeedNewPost } from "../../../types/feedTypes";
-import Tag from "../../Ui/Tag/Tag";
+
+import InputElement from "../../../Ui/InputElement/InputElement";
+import MainButton from "../../../Ui/MainButton/MainButton";
+import TextAreaElement from "../../../Ui/TextAreaElement/TextAreaElement";
+import ModalBody from "../../ModalBody";
+import Tag from "../../../Ui/Tag/Tag";
+
+import feedStore from "../../../../stores/feedStore";
+import modalStore from "../../../../stores/modalStore";
+
+import type { IFeedNewPost } from "../../../../types/feedTypes";
+
+import styles from "./FeedModal.scss";
 
 interface IFeedInputs {
   idea: string;
@@ -72,7 +76,7 @@ const FeedModal = () => {
           <InputElement
             value={inputs.idea}
             onChangeCallback={handleInputChange}
-            required={true}
+            isRequired={true}
             minlength={1}
             type="text"
             inputKey="idea"

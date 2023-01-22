@@ -1,14 +1,21 @@
-import { IFeedNewPost } from "../types/feedTypes";
-import { IFeedPost } from "../types/feedTypes";
 import { v4 as uuid } from "uuid";
+
+import type { IFeedNewPost } from "../types/feedTypes";
+import type { IFeedPost } from "../types/feedTypes";
 
 class FeedPostModel implements IFeedPost {
   id: string;
+
   title: string;
+
   description: string;
+
   upVotes: number;
+
   comments: number;
+
   tags: Array<string>;
+
   upVoted: boolean;
 
   constructor(newPost: IFeedNewPost) {

@@ -1,52 +1,31 @@
-/* eslint-disable no-undef */
-/* eslint-disable @typescript-eslint/no-var-requires */
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const getRules = require("./config/webpack/webpack.config.rules");
 
 module.exports = {
-  entry: "./src/index.tsx",
-  output: {
-    path: path.join(__dirname, "/dist"),
-    filename: "bundlefile.js",
-    publicPath: "/",
-  },
-  module: {
-    rules: [
-      {
-        test: /\.tsx?$/,
-        exclude: /node_modules/,
-        loader: "ts-loader",
-      },
-      {
-        test: /\.css$/i,
-        use: ["style-loader", "css-loader"],
-      },
-      {
-        test: /\.s[ac]ss$/i,
-        use: ["style-loader", "css-loader", "sass-loader"],
-      },
-      {
-        test: /\.(png|jpe?g|gif|jp2|webp)$/,
-        loader: "file-loader",
-        options: {
-          name: "[name].[ext]",
-        },
-      },
-      {
-        test: /\.svg$/,
-        use: ["@svgr/webpack"],
-      },
+    entry: path.resolve(__dirname, "src"),
+    output: {
+      path: path.join(__dirname, 'dist'),
+      filename: "bundlefile.js"
+    },
+    module: {
+      rules: [
+        ...getRules()
+      ],
+    },
+    resolve: {
+      extensions: [".tsx", ".ts", ".js"]
+    },
+    resolveLoader: {
+      modules: [
+        path.join(__dirname, 'node_modules')
+      ]
+    },
+    plugins: [
+      new HtmlWebpackPlugin({
+        template: "./public/index.html",
+      }),
+      new MiniCssExtractPlugin(),
     ],
-  },
-  devServer: {
-    historyApiFallback: true,
-  },
-  resolve: {
-    extensions: [".tsx", ".ts", ".js"],
-  },
-  plugins: [
-    new HtmlWebpackPlugin({
-      template: "./public/index.html",
-    }),
-  ],
 };
